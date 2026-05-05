@@ -10,7 +10,9 @@
 /*
 first model
 */
-{{ config(materialized='table') }}
+{{ 
+    config(materialized='view') 
+}}
 
 with source_data as (
 

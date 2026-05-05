@@ -1,6 +1,15 @@
 
 version: 2
 
+sources:
+  - name: raw
+    database: raw_db  # Replace with the actual database name
+    schema: raw_schema      # Replace with the schema name
+    tables:
+      - name: customers
+      - name: orders
+      - name: products
+
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
