@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: view
+    staging:
+      +database: STAGE_DB
+      +schema: STAGE_SCHEMA
+      +materialized: view   # temporary transformation layer
+
