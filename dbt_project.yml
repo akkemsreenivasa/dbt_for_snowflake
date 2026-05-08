@@ -44,4 +44,8 @@ models:
       +database: STAGE_DB
       +schema: STAGE_SCHEMA
       +materialized: view   # temporary transformation layer
+    marts:
+      +database: GOLD_DB
+      +schema: GOLD_SCHEMA
+      +materialized: table
 

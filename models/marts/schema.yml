@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: customer_orders_summary
+    description: "Customer level aggregated sales summary"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: total_orders
+        description: "Number of orders per customer"
+
+      - name: total_spent
+        description: "Total amount spent by customer"
